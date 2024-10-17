@@ -1,0 +1,227 @@
+<app-menuweb></app-menuweb>
+
+<div class="row justify-content-center mx-0 px-0 bg-1 parallax pt-es">
+  <div class="col-xl-10 col-lg-10 col-md-10">
+    <div class="row d-flex align-items-center">
+      <div class="col-xl-6 col-lg-6">
+        <div class="row">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            class="w-100 d-flex gap-3 align-items-center px-3 px-lg-5 py-2 py-lg-3 border cus-border second rounded-pill hero_hot mb-3 mb-lg-6 aos-init aos-animate"
+          >
+            <button class="px-3 btn bg-4 text-white">SOMOS</button>
+            <span class="text-white">LA FERRO BIENVENIDOS</span>
+          </div>
+          <div class="col-12">
+            <h1 class="fw-bold text-white fs-36">
+              EN EL BARRIO NACEN LOS SUEÑOS
+            </h1>
+            <p class="text-white">
+              Primera experiencia de turismo urbano y comunitario del eje
+              cafetero
+            </p>
+          </div>
+          <div class="col-6">
+            <a class="btn bg-white" href="https://api.whatsapp.com/send?phone=573027445511&amp;text=Mensaje%20desde%20la%20web" target="_blank">Agénda tu recorrido</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-xl-6 col-lg-6 col-md-12 d-flex justify-content-center align-items-center alto-1"
+      >
+        <img src="assets/img/logo-2.webp" width="370px" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gallery -->
+<div class="row justify-content-center px-0 mx-0 bg-3">
+  <div class="col-xl-12 text-center my-4 py-4">
+    <h2 class="fs-48 text-white">Galería</h2>
+  </div>
+  <div class="col-xl-10 col-lg-10 col-md-10 col-12">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 pb-4 mb-lg-0">
+        <div class="overflow-hidden">
+          <img
+            src="assets/img/pic-1.webp"
+            class="w-100 shadow-1-strong rounded mb-4 efecto1"
+            alt="Boat on Calm Water"
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            src="assets/img/pic-4.webp"
+            class="w-100 shadow-1-strong rounded mb-4 efecto1"
+            alt="Wintry Mountain Landscape"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="overflow-hidden">
+          <img
+            src="assets/img/pic-5.webp"
+            class="w-100 shadow-1-strong rounded mb-4 efecto1"
+            alt="Mountains in the Clouds"
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            src="assets/img/pic-3.webp"
+            class="w-100 shadow-1-strong rounded mb-4 efecto1"
+            alt="Boat on Calm Water"
+          />
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="overflow-hidden">
+          <img
+            src="assets/img/pic-2.webp"
+            class="w-100 shadow-1-strong rounded mb-4 efecto1"
+            alt="Waves at Sea"
+          />
+        </div>
+        <div class="overflow-hidden">
+          <img
+            src="assets/img/pic-6.webp"
+            class="w-100 shadow-1-strong rounded mb-4 efecto1"
+            alt="Yosemite National Park"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- actividades-->
+<div class="row mx-0 px-0 pb-4 bg-2 parallax justify-content-center">
+  <div class="col-xl-12 text-center mt-4 pt-4">
+    <h2 class="fs-48 text-white">Calendario de Actividades</h2>
+  </div>
+  <div class="col-xl-10">
+    <p-carousel 
+        [value]="products" 
+        [numVisible]="3" 
+        [numScroll]="3" 
+        [circular]="false" 
+        [responsiveOptions]="responsiveOptions">
+            <ng-template let-product pTemplate="item">
+                <div class="border-1 surface-border border-round m-2 p-3">
+                    <div class="mb-3">
+                        <div class="relative mx-auto">
+                            <img 
+                                src="assets/img/{{ product.image }}" 
+                                style="max-width: 100%" 
+                                [alt]="product.name" 
+                                class="w-full border-round" />
+                            <p-tag 
+                                
+                                class="absolute" 
+                                [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
+                        </div>
+                    </div>
+                    <div class="mb-3 fs-24 text-white">
+                        {{ product.name }}
+                    </div>
+                    <div class="flex justify-content-between align-items-center">
+                    <div class="mt-0 text-white">
+                      {{ product.description }}
+                    </div>
+
+                    </div>
+                </div>
+            </ng-template>
+    </p-carousel>
+  </div>
+</div>
+
+<!-- noticias-->
+<div class="row mx-0 px-0 justify-content-center bg-3">
+  <div class="col-xl-12 text-center mt-4 pt-4">
+    <h2 class="fs-48 text-white">Noticias</h2>
+  </div>
+  <div class="col-xl-10">
+    <div class="row">
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-4">
+        <div class="overflow-hidden">
+          <img
+            src="../assets/img/pic-8.webp"
+            class="card-img-top efecto1"
+            alt="..."
+          />
+        </div>
+        <div class="card-body text-center pt-4 text-white">
+          <h2 class="card-title fs-32">Titanes Caracol</h2>
+          <h3 class="fs-18">Por Noticias Caracol</h3>
+          <p class="card-text">
+            Danilo Bermúdez es el quinto nominado en la categoría de inclusión, integración y reconciliación de Titanes Caracol 2024. En Pereira, capital de Risaralda, este joven transformó a La Ferro, o Comuna del Ferrocarril, en un nido de grafitis, arte, música y pintura.Gracias a su iniciativa, esta zona, antes vulnerable y donde no entraba ni la autoridad, hoy es una feria para el turismo...
+          </p>
+          <hr>
+          <span class="fs-18">Lee la nota completa en</span>
+          <a class="btn fs-14" href="https://www.noticiascaracol.com/colombia/danilo-bermudez-nominado-a-titanes-caracol-2024-transformo-zona-violenta-de-pereira-rg10" target="_blank">
+            Danilo Bermúdez, nominado a Titanes Caracol 2024: transformó zona violenta de Pereira - NoticiasCaracol
+          </a>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-4">
+        <div class="overflow-hidden">
+          <img
+            src="../assets/img/pic-9.webp"
+            class="card-img-top efecto1"
+            alt="..."
+          />
+        </div>
+        <div class="card-body text-center pt-4 text-white">
+          <h2 class="card-title fs-32">La Ferro destino turístico</h2>
+          <h3 class="fs-18">Por Alcaldía de Pereira</h3>
+          <p class="card-text">
+            “La Ferro” es un sector ubicado en el ingreso al aeropuerto
+            Matecaña, que ahora luce atractivo desde el punto de vista estético
+            y más cercano a la comunidad y a Pereira, gracias a la idea liderada
+            por el gestor cultural, Danilo Bermúdez, quien reunió a toda la
+            comunidad del sector con el fin de cambiar su imagen...
+          </p>
+          <hr>
+          <span class="fs-18">Lee la nota completa en</span>
+          <a class="btn fs-14" href="https://www.pereira.gov.co/publicaciones/7289/la-ferro-se-consolida-como-un-destino-turistico-en-pleno-corazon-de-pereira/" target="_blank">
+            “La Ferro” se consolida como un destino turístico en pleno corazón de Pereira
+          </a>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6 col-md-6 col-12 p-4">
+        <div class="overflow-hidden">
+          <img
+            src="../assets/img/pic-10.webp"
+            class="card-img-top efecto1"
+            alt="..."
+          />
+        </div>
+        <div class="card-body text-center pt-4 text-white">
+          <h2 class="card-title fs-32">Festival Nacional de Muralismo</h2>
+          <h3 class="fs-18">Por El Diario Pereira</h3>
+          <p class="card-text ">
+            El reciente Festival Nacional de Muralismo celebrado en el barrio La
+            Ferro de Pereira ha dejado una huella en toda la comunidad. Con una
+            destacada participación de ciudadanos y artistas provenientes de
+            diversos departamentos, el evento se convirtió en un verdadero
+            espectáculo de color y creatividad...
+          </p>
+          <hr>
+          <span class="fs-18">Lee la nota completa en</span>
+          <a class="btn fs-14" href="https://www.eldiario.com.co/noticias/risaralda/pereira/el-festival-nacional-de-muralismo-coloreo-la-ferro-un-tributo-a-la-identidad-local/" target="_blank">
+            El Festival Nacional de Muralismo coloreó la Ferro, un tributo a la identidad local - El Diario
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<app-footer></app-footer>

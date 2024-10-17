@@ -1,0 +1,29 @@
+<div class="row justify-content-center mx-0 px-0 py-2" id="menu-bg" [ngClass]="{'scrolled': isScrolled}">
+  <div class="col-xl-10 col-lg-12 col-md-12 col-12">
+      <nav class="nav">
+          <div class="logo">
+            <a routerLink="/inicio">
+                <img src="assets/img/logo.webp" width="60px">
+            </a>
+        </div>
+        <div class="acceso">
+            <span class="btn-registrar-m"><a  href="#">Donaciones</a></span>
+            <span class="btn-iniciar-m"><a href="https://api.whatsapp.com/send?phone=573027445511&amp;text=Mensaje%20desde%20la%20web" target="_blank">Agenda tu recorrido</a></span>
+        </div>
+          <ul class="nav-links" [class.nav-active]="navActive">
+              <li class="pt-1"><a routerLink="/inicio">Inicio</a></li>
+              <li class="pt-1"><a routerLink="/somos">Quienes Somos</a></li>
+              <li class="pt-1"><a routerLink="/estaciones">Estaciones culturales</a></li>
+              <li class="pt-1"><a routerLink="/convenios">Convenios</a></li>
+              <li class="pt-1"><a routerLink="/eventos">Grandes eventos</a></li>
+              <li class="btn-registrar"><a  href="#">Donaciones</a></li>
+              <li class="btn-iniciar"><a href="https://api.whatsapp.com/send?phone=573027445511&amp;text=Mensaje%20desde%20la%20web" target="_blank">Agenda tu recorrido</a></li>
+          </ul>
+          <div class="burger" (click)="toggleNavbar()">
+              <div class="line1" [class.toggle]="navActive"></div>
+              <div class="line2" [class.toggle]="navActive"></div>
+              <div class="line3" [class.toggle]="navActive"></div>
+          </div>
+      </nav>
+  </div>
+</div>

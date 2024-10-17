@@ -1,0 +1,255 @@
+
+#menu-bg{
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(238, 243, 252, 0.8) 100%); */
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  transition: background-color 0.2s, transform 0.2s; /* Transición de 2 segundos para color y transformación */
+z-index: 1;
+}
+
+#menu-bg.scrolled {
+  background-color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombreado */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 60px;
+
+}
+
+.nav dl, ol, ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav .logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav .nav-links li {
+  margin-left: 10px;
+}
+
+.nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px !important;
+}
+
+.nav .nav-links a:hover {
+  color: #ef9435; /* Cambia este color al que prefieras */
+}
+
+.nav .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+.nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  flex-direction: column;
+}
+
+
+.nav .dropdown-content li {
+  text-align: left;
+  list-style: none;
+
+}
+
+.nav .dropdown-content a {
+  color: black;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.nav .dropdown-content a:hover {
+  color: #15215a;
+}
+
+.nav .dropdown-active {
+  display: flex;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.nav .arrow {
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      background-color: #000;
+      transition: all 0.5s ease;
+  }
+
+  .nav .nav-links.nav-active {
+      left: 0;
+  }
+
+  .nav .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+
+  }
+
+  .nav .burger {
+      display: block;
+  }
+
+  .nav .burger .line1.toggle {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .nav .burger .line2.toggle {
+      opacity: 0;
+  }
+
+  .nav .burger .line3.toggle {
+      transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .nav .dropdown-content {
+      position: static;
+  }
+
+  .nav.dropdown-content li {
+      text-align: center;
+  }
+
+}
+.btn-iniciar{
+
+  background-color: #fff;
+  background-image: url("../../../assets/img/login.webp");
+  background-position: 12%;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  border-radius: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+.btn-iniciar a{
+  color: #000 !important;
+  -webkit-text-stroke-color: #fff;
+}
+.btn-registrar{
+  color: #15215a;
+  -webkit-text-stroke-color: #7CAC3B;
+  background-color: #7CAC3B;
+  background-image: url("../../../assets/img/registro.webp");
+  background-position: 12%;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  border-radius: 100px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+.acceso{
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .nav .nav-links a {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav .nav-links a {
+    font-size: 16px !important;
+  }
+  .btn-registrar{
+    width: 150px;
+  }
+  .btn-iniciar{
+    width: 250px;
+  }
+
+  .acceso{
+    display: block;
+  }
+  .btn-registrar-m{
+    -webkit-text-stroke-color: #7CAC3B;
+    background-color: #7CAC3B;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    border-radius: 100px;
+    padding:5px 10px;
+    font-size: 14px;
+    width: 100px;
+
+  }
+  .btn-registrar-m a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .btn-iniciar-m{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    border-radius: 100px;
+    padding:5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000;
+  }
+  .btn-iniciar-m a{
+    color: #000;
+    text-decoration: none;
+  }
+}

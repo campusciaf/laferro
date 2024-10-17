@@ -1,0 +1,73 @@
+footer {
+	padding: 1% 0% 2% 0%;
+	color: white;
+    display: block;
+}
+
+.redes_footer a{
+	margin: 0.5%;
+}
+
+.redes_footer img{
+	width: 50px;
+	-webkit-transform:scale(1);
+	transform:scale(1);
+	transition: all 1s;
+}
+
+.redes_footer img:hover{
+	-webkit-transform:scale(1.2);
+	transform:scale(1.2);
+}
+
+.suscripcion-input{
+	background-color: rgba(0,0,0,0);
+	color:#fff;
+	font-size: 16px;
+}
+
+footer p{
+	font-family: "fuente2";
+	font-size: 12px;
+}
+
+footer .logo img{
+	width: 80%;
+}
+
+@media(max-width:1024px){
+	.redes_footer img{
+		width: 50px ;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	footer .logo img{
+		width: 150px;
+	}
+
+}
+
+.api-whatsapp{
+    color: #fff;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10%;
+    right: 30px;
+    background-color: #25d366;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #000;
+    z-index: 100;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.api-whatsapp img {
+    width: 40px;
+    padding-top: 6px;
+    filter: brightness(100);
+    transition: all 1s;
+}

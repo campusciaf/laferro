@@ -1,1 +1,142 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@font-face {
+	font-family: "fuente1";
+	src: url("assets/fuentes/baltster.ttf");
+}
+
+body{
+  font-family: "fuente1";
+}
+
+
+.bg-1{
+  background-image: url("assets/img/bg-1.webp");
+  background-position: 50%;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+}
+.bg-2{
+  background-image: url("assets/img/bg-2.webp");
+  background-position: 50%;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+}
+.bg-3{
+  background-image: url("assets/img/bg-3.webp");
+  background-position: 50%;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+
+}
+.hero_hot {
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background-color: rgba(0,0,0,0.2);
+}
+.cus-border.second {
+  border-color: rgba(252,253,255,0.2) !important;
+}
+.bg-4{
+  background-color: #b8307a !important;
+}
+
+/* ****** tamaño de texto ******* **/
+.fs-10{
+	font-size: 10px !important;
+}
+.fs-12{
+	font-size: 12px !important;
+}
+.fs-14{
+	font-size: 14px !important;
+
+}
+.fs-16{
+	font-size: 16px !important;
+}
+.fs-18{
+	font-size: 18px !important;
+}
+.fs-20{
+	font-size: 20px !important;
+}
+.fs-22{
+	font-size: 22px !important;
+}
+.fs-24{
+	font-size: 24px !important;
+}
+.fs-28{
+	font-size: 28px !important;
+}
+.fs-32{
+	font-size: 32px !important;
+}
+.fs-36{
+	font-size: 36px !important;
+}
+.fs-48{
+	font-size: 48px !important;
+}
+/*  *******fin **/
+
+.efecto1{
+  filter: none;
+  transition: all 1s;
+}
+.efecto1:hover {
+  filter: saturate(180%);
+  -webkit-transform:scale(1.3);transform:scale(1.1);
+  
+}
+.alto-1{
+ height: 80vh;
+}
+.parallax{
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+
+	max-width: 100%;
+	position: relative
+}
+.p-component{
+  font-family: "fuente1" !important;
+}
+@media (max-width: 1024px) {
+  .pt-es{
+    padding-top: 80px;
+  }
+  .alto-1{
+    height: 60vh;
+   }
+}
+
+@media (max-width: 768px) {
+  .pt-es{
+    padding-top: 150px;
+  }
+  .alto-1{
+    height: 60vh;
+   }
+}
+
+@media (max-width: 425px) {
+  .pt-es{
+    padding-top: 80px;
+  }
+  .alto-1{
+    height: auto;
+   }
+}
